@@ -18,5 +18,8 @@
         },
         "default_title": "My Amazing Chrome Extension"
     },
+    "permissions": [
+        "identity", "identity.email"
+    ],
     "options_page": "options.html"
 }
