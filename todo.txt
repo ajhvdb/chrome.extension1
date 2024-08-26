@@ -1,0 +1,61 @@
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+EB-MB512:chrome-extension a101$ git remote add origin https://github.com/ajhvdb/chrome.extension1.git
+fatal: remote origin already exists.
+EB-MB512:chrome-extension a101$ git remote add origin https://github.com/ajhvdb/chrome.extension1.git
+fatal: remote origin already exists.
+EB-MB512:chrome-extension a101$ 
+EB-MB512:chrome-extension a101$ git remote add origin https://github.com/ajhvdb/chrome.extension1.git
+fatal: remote origin already exists.
+EB-MB512:chrome-extension a101$ git remote add set-url https://github.com/ajhvdb/chrome.extension1.git
+EB-MB512:chrome-extension a101$ git remote --verbose
+origin  https://github.com/manshu/chrome-extension.git (fetch)
+origin  https://github.com/manshu/chrome-extension.git (push)
+set-url https://github.com/ajhvdb/chrome.extension1.git (fetch)
+set-url https://github.com/ajhvdb/chrome.extension1.git (push)
+EB-MB512:chrome-extension a101$ git add .
+EB-MB512:chrome-extension a101$ git remote --verbose
+origin  https://github.com/manshu/chrome-extension.git (fetch)
+origin  https://github.com/manshu/chrome-extension.git (push)
+set-url https://github.com/ajhvdb/chrome.extension1.git (fetch)
+set-url https://github.com/ajhvdb/chrome.extension1.git (push)
+EB-MB512:chrome-extension a101$ git push origin master
+remote: Permission to manshu/chrome-extension.git denied to ajhvdb.
+fatal: unable to access 'https://github.com/manshu/chrome-extension.git/': The requested URL returned error: 403
+EB-MB512:chrome-extension a101$ git remote set-url https://github.com/ajhvdb/chrome.extension1.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+EB-MB512:chrome-extension a101$ git remote set-url https://github.com/ajhvdb/chrome.extension1.git
+usage: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    --push                manipulate push URLs
+    --add                 add URL
+    --delete              delete URLs
+
+EB-MB512:chrome-extension a101$ git remote set-url origin https://github.com/ajhvdb/chrome.extension1.git
+EB-MB512:chrome-extension a101$ git remote --verbose
+origin  https://github.com/ajhvdb/chrome.extension1.git (fetch)
+origin  https://github.com/ajhvdb/chrome.extension1.git (push)
+set-url https://github.com/ajhvdb/chrome.extension1.git (fetch)
+set-url https://github.com/ajhvdb/chrome.extension1.git (push)
+EB-MB512:chrome-extension a101$ git add .
+EB-MB512:chrome-extension a101$ git push origin master
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (14/14), done.
+Writing objects: 100% (19/19), 11.79 KiB | 3.93 MiB/s, done.
+Total 19 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/ajhvdb/chrome.extension1.git
+ * [new branch]      master -> master
+EB-MB512:chrome-extension a101$ 
+EB-MB512:chrome-extension a101$ 
